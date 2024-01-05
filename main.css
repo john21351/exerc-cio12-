@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.container,
+.container-produtos {
+    max-width: 1025px;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    padding: 16px 0;
+    background-color: rgb(36, 127, 247);
+    color: white;
+}
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    color: white;
+    font-size: 18px;
+}
+
+header {
+    font-weight: bold;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foto-frente {
+    height: 400px;
+}
+.foto-texto {
+    display: flex;
+    align-items: center;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: rgb(36, 127, 247);
+    border-bottom: 2px solid rgb(36, 127, 247);
+    max-width: 1000px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.foto-frente {
+    margin-right: 32px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+
+}
+
+.lista-tenis li {
+    margin: 50px;
+    list-style: none;
+    width: 15%;
+    float: left;
+}
+
+.lista-tenis li h3 {
+    margin: 16px 0;
+}
+
+.lista-tenis li img {
+    max-width: 100%;
+}
+
+.lista-tenis li h3 {
+    margin: 16px 0;
+}
+
+button {
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(36, 127, 247);
+    cursor: pointer;
+    margin-top: 10px;
+    border-style:none
+}
+
+/*   
+Layout Desktop (a partir de 1024px): site normal
+Layout Tablet (de 641px até 1023px):com 4 colunas ao lado
+Layout Mobile (até 640px):2 colunas de tenis ao lado
+*/
+
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+    .container{
+        overflow: hidden;
+        flex-direction: column;
+}
+.foto-frente {
+    margin-right: 0; 
+}
+.lista-tenis li {
+    width: 48%; 
+    margin: 1%; 
+}
+
+.container-produtos h2 {
+    text-align: center; 
+}
+}
+
+
+@media screen and (max-width: 640px) {
+
+        .container{
+            overflow: hidden;
+            flex-direction: column;
+    }
+    .foto-frente {
+        margin-right: 0;
+    }
+    .lista-tenis li {
+        margin: 16px 0; 
+        width: 100%; 
+
+}
+}
